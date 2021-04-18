@@ -9,10 +9,10 @@ public class Hashtable3 {
 		hashtable.put("3","Tom");
 		hashtable.put("1","Sam");	 
 		System.out.println(hashtable);
-		 Set<String> setKeys = hashtable.keySet();	  	        
-	        Iterator<String> itr = setKeys.iterator();	  	      
-	        while (itr.hasNext()) {	  	           
-	            String key = itr.next();	  	            
-	            System.out.println("Key:"+key+" "+"Name:"+ hashtable.get(key));}
+		Set entrySet = hashtable.entrySet();		 		 	   
+	        Iterator it = entrySet.iterator();	     	   
+	        System.out.println("Hashtable entries:");
+	        while(it.hasNext())	 
+	        System.out.println(it.next());	
 	}
 }
